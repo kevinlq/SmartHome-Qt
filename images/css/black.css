@@ -1,0 +1,123 @@
+/*标题栏、中间部分以及底部样式设置*/
+QWidget#widget_Top{
+	background: qlineargradient(spread:padding-bottom, x1:0, y1:0, x2:0, y2:1, stop:0 #3A3A3A, stop:1 #494242);
+}
+QStackedWidget{
+	background: qlineargradient(spread:padding-bottom, x1:0, y1:0, x2:0, y2:1, stop:0 #3A3A3A, stop:1 #494242);
+}
+QWidget#widget_Mid{
+	background: qlineargradient(spread:padding-bottom, x1:0, y1:0, x2:0, y2:1, stop:0 #3A3A3A, stop:1 #494242);
+}
+QWidget#widget_Bottom{
+	background: qlineargradient(spread:padding-bottom, x1:0, y1:0, x2:0, y2:1, stop:0 #3A3A3A, stop:1 #494242);
+}
+QLabel#label_Bottom_Div
+{
+	background-color:#413E3E;
+}
+/*设置界面样式*/
+QWidget#widget_set_bottom{
+	background: qlineargradient(spread:padding-bottom, x1:0, y1:0, x2:0, y2:1, stop:0 #7E97B0, stop:1 #2D5188);
+}
+QWidget#widget_Mid{
+	background: qlineargradient(spread:padding-bottom, x1:0, y1:0, x2:0, y2:1, stop:0 #4B87AF, stop:1 #88C7D7);
+}
+QToolButton#tbnMenuClose{
+	border-image:url(:/images/close.png);
+}
+QToolButton#tbnMenuClose:hover{
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(238, 0, 0, 128), stop:1 rgba(238, 44, 44, 255));
+}
+
+/*灯光模块界面样式*/
+QWidget#widget_light_top,QWidget#widget_light_mid,QWidget#widget_light_bottom{
+	background: qlineargradient(spread:padding-bottom, x1:0, y1:0, x2:0, y2:1, stop:0 #3C6B9C, stop:1 #1E4E80);
+}
+
+/*卧室界面样式*/
+QWidget#widget_temp{
+	background: qlineargradient(spread:padding-bottom, x1:0, y1:0, x2:0, y2:1, stop:0 #204D7C, stop:1 #204D7C);
+}
+QWidget#widget_temp_background{
+	background: qlineargradient(spread:padding-bottom, x1:0, y1:0, x2:0, y2:1, stop:0 #2C5E93, stop:1 #193E6E);
+}
+
+QToolButton#tbnSetting{
+	border:0px;
+}
+QToolButton#tbnSetting:hover{
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(25, 134, 199, 0), stop:1 #5CACEE);
+}
+QToolButton#tbnHome{
+	border:0px;
+}
+QToolButton#tbnHome:hover{
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(25, 134, 199, 0), stop:1 #5CACEE);
+}
+
+/*登录界面*/
+QLabel#whiteLabel{
+	color:white;
+}
+QPushButton#loginGreenButton{
+	border-radius:2px;
+	background:rgb(110, 190, 10);
+	color:white;
+}
+QPushButton#loginGreenButton:hover{
+	background:rgb(140, 220, 35)
+}
+
+QLineEdit{
+	border:1px solid rgb(180, 180, 180);
+}
+
+QGroupBox::title{
+	color:green;
+}
+QComboBox,QDateEdit{
+	border-radius: 3px;
+	padding: 1px;
+	border: 1px solid #5CACEE;
+}
+QComboBox::drop-down,QDateEdit::drop-down {
+	subcontrol-origin: padding;
+	subcontrol-position: top right;
+	width: 15px; 
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-left-color: #5CACEE;
+}
+QComboBox::down-arrow,QDateEdit::down-arrow {
+	image: url(:/images/array_down.png); 
+}
+
+QTabWidget::pane{
+	border:none;
+}
+QTabWidget::tab-bar{
+	alignment:left;
+	font-size:10px;
+	font:bold;
+}
+QTabBar::tab{
+	background:transparent;
+	color:white;
+	font:bold;
+	min-width:36ex;
+	min-height:12ex;
+}
+QTabBar::tab:hover{
+	background:rgb(255, 255, 255, 100);
+}
+QTabBar::tab:selected{
+	border-color: white;
+	background:rgb(239,252,251,100);
+	color:green;
+}
+.QGroupBox{
+	border: 1px solid #47719C;
+	border-radius: 5px;
+}

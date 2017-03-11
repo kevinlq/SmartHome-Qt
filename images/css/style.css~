@@ -1,0 +1,207 @@
+/*标题栏、中间部分以及底部样式设置*/
+QWidget#widget_Top{
+	background: qlineargradient(spread:padding-bottom, x1:0, y1:0, x2:0, y2:1, stop:0 #184CA5, stop:1 #39AAD8);
+}
+QStackedWidget{
+	background: qlineargradient(spread:padding-bottom, x1:0, y1:0, x2:0, y2:1, stop:0 #4B87AF, stop:1 #88C7D7);
+}
+QWidget#widget_Mid{
+	background: qlineargradient(spread:padding-bottom, x1:0, y1:0, x2:0, y2:1, stop:0 #4B87AF, stop:1 #88C7D7);
+}
+QWidget#widget_Bottom{
+	background: qlineargradient(spread:padding-bottom, x1:0, y1:0, x2:0, y2:1, stop:0 #4B769F, stop:1 #2D5188);
+}
+QLabel#label_Bottom_Div
+{
+	background-color:#38598F;
+}
+/*首页时间日期显示样式*/
+QWidget#widget_data{
+	border:2px groove gray;
+	border-radius:12px;
+	padding:2px 4px;
+	background: qlineargradient(spread:padding-bottom, x1:0, y1:0, x2:0, y2:1, stop:0 #446E9A, stop:1 #226FC0);
+}
+QLabel#label_data,QLabel#label_week{
+	color:#FFFFFF
+}
+QLabel#label_hour,QLabel#label_min{
+	border:2px;
+	border-radius:4px;
+	padding:2px 4px;
+	color:rgb(251,253,252);
+	font-size:50px;
+	background: qlineargradient(spread:padding-bottom, x1:0, y1:0, x2:0, y2:1, stop:0 #3F4F61, stop:1 #6887A8);
+}
+QLabel#label_sec{
+	color:rgb(255,255,255);
+}
+
+/*设置界面样式*/
+QWidget#widget_set_bottom{
+	background: qlineargradient(spread:padding-bottom, x1:0, y1:0, x2:0, y2:1, stop:0 #7E97B0, stop:1 #2D5188);
+}
+QWidget#widget_Mid{
+	background: qlineargradient(spread:padding-bottom, x1:0, y1:0, x2:0, y2:1, stop:0 #4B87AF, stop:1 #88C7D7);
+}
+QToolButton#tbnMenuClose{
+	border-image:url(:/images/close.png);
+}
+QToolButton#tbnMenuClose:hover{
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(238, 0, 0, 128), stop:1 rgba(238, 44, 44, 255));
+}
+
+/*去掉设置按钮小箭头*/
+
+/*灯光模块界面样式*/
+QWidget#widget_light_top,QWidget#widget_light_mid,QWidget#widget_light_bottom{
+	background: qlineargradient(spread:padding-bottom, x1:0, y1:0, x2:0, y2:1, stop:0 #3C6B9C, stop:1 #1E4E80);
+}
+
+/*卧室界面样式*/
+QWidget#widget_right{
+	background: qlineargradient(spread:padding-bottom, x1:0, y1:0, x2:0, y2:1, stop:0 #204D7C, stop:1 #204D7C);
+}
+QWidget#widget_right_main{
+	background: qlineargradient(spread:padding-bottom, x1:0, y1:0, x2:0, y2:1, stop:0 #2C5E93, stop:1 #193E6E);
+}
+QWidget#widget_temp{
+	background: qlineargradient(spread:padding-bottom, x1:0, y1:0, x2:0, y2:1, stop:0 #204D7C, stop:1 #204D7C);
+}
+/*窗帘界面样式*/
+QWidget#widget_curtain_close,QWidget#widget_curtain_open,QWidget#widget_curtain_stop{
+	border:2px;
+	border-radius:12px;
+	padding:2px 4px;
+	background: qlineargradient(spread:padding-bottom, x1:0, y1:0, x2:0, y2:1, stop:0 #2B5B8C, stop:1 #2C5E93);
+}
+/*模式选择控制界面*/
+QWidget#widget_model_widget_up,QWidget#widget_model_widget_down{
+	border:2px;
+	border-radius:10px;
+	padding:2px 4px;
+	background: qlineargradient(spread:padding-bottom, x1:0, y1:0, x2:0, y2:1, stop:0 #3C6B9C, stop:1 #1E4E80);
+}
+QLabel#label_text{
+	border:2px;
+	border-radius:10px;
+	padding:2px 4px;
+	background: qlineargradient(spread:padding-bottom, x1:0, y1:0, x2:0, y2:1, stop:0 #3C6B9C, stop:1 #1E4E80);
+}
+
+/*音乐播放控制界面样式*/
+QWidget#widget_music_list,QWidget#widget_music_control{
+	border:2px;
+	border-radius:10px;
+	padding:2px 4px;
+	background: qlineargradient(spread:padding-bottom, x1:0, y1:0, x2:0, y2:1, stop:0 #1D497C, stop:1 #6D9BD1);
+}
+QListWidget#listWidget_music{
+	background: qlineargradient(spread:padding-bottom, x1:0, y1:0, x2:0, y2:1, stop:0 #70C2EA, stop:1 #B4E1F7);
+}
+
+QToolButton#tbnSetting{
+	border:0px;
+}
+QToolButton#tbnSetting:hover{
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(25, 134, 199, 0), stop:1 #5CACEE);
+}
+QToolButton#tbnHome{
+	border:0px;
+}
+QToolButton#tbnHome:hover{
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(25, 134, 199, 0), stop:1 #5CACEE);
+}
+
+/*登录界面*/
+QLabel#whiteLabel{
+	color:white;
+}
+QPushButton#loginGreenButton{
+	border-radius:2px;
+	background:rgb(110, 190, 10);
+	color:white;
+}
+QPushButton#loginGreenButton:hover{
+	background:rgb(140, 220, 35)
+}
+
+/*设置消息框样式*/
+QWidget#frmMessageBox{
+	border:1px solid #1B89CA;
+	border-radius:0px;
+}
+QWidget#widget_title{
+	background: qlineargradient(spread:padding-bottom, x1:0, y1:0, x2:0, y2:1, stop:0 #1B89A1, stop:1 #1077A0);
+}
+QPushButton#btnMenu_Close{
+	border-radius:0px;
+	color: #F0F0F0;
+	background-color:rgba(0,0,0,0);
+	border-style:none;
+}
+QPushButton#btnMenu_Close:hover{
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(238, 0, 0, 128), stop:1 rgba(238, 44, 44, 255));
+}
+.QGroupBox{
+	border: 1px solid #5CACEE;
+	border-radius: 5px;
+}
+
+QLineEdit{
+	border:1px solid rgb(180, 180, 180);
+}
+
+QGroupBox::title{
+	color:green;
+}
+/*数据统计中，数据日期*/
+QComboBox#comboBox_view_data{
+	border-radius: 3px;
+	padding: 2px;
+	border: 2px solid #416997;
+	font-size:10pt;
+}
+QComboBox::drop-down,QDateEdit::drop-down {
+	subcontrol-origin: padding;
+	subcontrol-position: top right;
+	width: 15px; 
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-left-color: #5CACEE;
+}
+QComboBox::down-arrow,QDateEdit::down-arrow {
+	image: url(:/images/array_down.png); 
+}
+
+QTabWidget::pane{
+	border:none;
+}
+QTabWidget::tab-bar{
+	alignment:left;
+	font-size:10px;
+	font:bold;
+}
+QTabBar::tab{
+	background:transparent;
+	color:white;
+	font:bold;
+	min-width:14ex;
+	min-height:4ex;
+	max-width:36ex;
+	max-height:12ex;
+}
+QTabBar::tab:hover{
+	background:rgb(255, 255, 255, 100);
+}
+QTabBar::tab:selected{
+	border-color: white;
+	background:rgb(239,252,251,100);
+	color:green;
+}
+.QGroupBox{
+	border: 1px solid #47719C;
+	border-radius: 5px;
+}
