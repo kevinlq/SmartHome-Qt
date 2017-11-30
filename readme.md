@@ -1,3 +1,16 @@
+---
+title: 智能家居之环境监控系统
+date : 2016-01-13
+---
+
+******
+
+    作者:鹅卵石
+    时间:2016年4月13日22:43:53
+    版本:V 0.0.0
+    邮箱:kevinlq@yeah.net
+
+
 # 基于zigbee和STM32的环境监测监控系统
 
 ### 系统功能
@@ -28,5 +41,10 @@
    
    ![Image text](http://git.oschina.net/kevinlq0912/SmartHOme-ARM/raw/master/screen/hum.png)
    
-  ### 电路原理图
+
+   ### 电路原理图
+   电路图使用AD13软件进行绘制，使用的主控芯片是STM32F103
+   
    ![Image text](http://git.oschina.net/kevinlq0912/SmartHOme-ARM/raw/master/screen/stm32.png)
+   
+ ## 如果有什么问题欢迎及时联系我
