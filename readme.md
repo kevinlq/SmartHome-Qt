@@ -20,31 +20,32 @@ date : 2016-01-13
   [1]: http://blog.csdn.net/u013704336/article/details/51765397
   
   ### 首页
-  ![Image text](http://git.oschina.net/kevinlq0912/SmartHOme-ARM/raw/master/screen/home.png)
+  ![Image text](/screen/home.png)
+  
   
  ### 控制主界面
-  ![Image text](http://git.oschina.net/kevinlq0912/SmartHOme-ARM/raw/master/screen/controlHome.png)
+  ![Image text](/screen/controlHome.png)
   
  ### 客厅
-  ![Image text](http://git.oschina.net/kevinlq0912/SmartHOme-ARM/raw/master/screen/parlour.png)
+  ![Image text](screen/parlour.png)
   
  ### 卧室
-  ![Image text](http://git.oschina.net/kevinlq0912/SmartHOme-ARM/raw/master/screen/bedroom.png)
+  ![Image text](/screen/bedroom.png)
   
  ### 厨房
-   ![Image text](http://git.oschina.net/kevinlq0912/SmartHOme-ARM/raw/master/screen/kitchen.png)
+   ![Image text](/screen/kitchen.png)
   
  ### 历史曲线数据
-   ![Image text](http://git.oschina.net/kevinlq0912/SmartHOme-ARM/raw/master/screen/temp.png)
+   ![Image text](/screen/temp.png)
    
-   ![Image text](http://git.oschina.net/kevinlq0912/SmartHOme-ARM/raw/master/screen/smoke.png)
+   ![Image text](/screen/smoke.png)
    
-   ![Image text](http://git.oschina.net/kevinlq0912/SmartHOme-ARM/raw/master/screen/hum.png)
+   ![Image text](/screen/hum.png)
    
 
    ### 电路原理图
    电路图使用AD13软件进行绘制，使用的主控芯片是STM32F103
    
-   ![Image text](http://git.oschina.net/kevinlq0912/SmartHOme-ARM/raw/master/screen/stm32.png)
+   ![Image text](/screen/stm32.png)
    
  ## 如果有什么问题欢迎及时联系我
