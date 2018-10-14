@@ -16,8 +16,6 @@ date : 2016-01-13
 ## 1 系统功能
 详细的介绍可以看博客[http://blog.csdn.net/u013704336/article/details/51765397][1]
 这个项目作为2016年的毕设，完美完成了各项要求。综合利用了所学的C语言、C++、zigbee、stm32、Qt、ARM、等嵌入式技术。
-
-  [1]: http://blog.csdn.net/u013704336/article/details/51765397
   
   ### 首页
   ![Image text](/screen/home.png)
@@ -71,7 +69,7 @@ DESTDIR = $$PWD/bin
 
 
 
-关于交叉编译，移植到ARM平台，可以参考我的这篇文档，介绍很详细! [传输门][1]
+关于交叉编译，移植到ARM平台，可以参考我的这篇文档，介绍很详细! [传输门][2]
 
 
  
@@ -91,5 +89,5 @@ DESTDIR = $$PWD/bin
  还是很高兴。以后会继续分享的(之前这份代码确实写的比较烂)。
 
 
- 
- [1]: http://kevinlq.com/2015/09/11/Qt_corss_build_setting/		"kevinlq 鹅卵石的博客"
+ [1]: http://blog.csdn.net/u013704336/article/details/51765397
+ [2]: http://kevinlq.com/2015/09/11/Qt_corss_build_setting/		"kevinlq 鹅卵石的博客"
