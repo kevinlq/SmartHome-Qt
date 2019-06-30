@@ -9,7 +9,7 @@ QT  += printsupport
 QT  += sql
 #QT  += phonon
 
-CONFIG  += debug serialport
+CONFIG  += serialport
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
