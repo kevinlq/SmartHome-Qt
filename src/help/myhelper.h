@@ -1,9 +1,13 @@
 #ifndef MYHELPER_H
 #define MYHELPER_H
 
+/*Qt lib*/
 #include <QtCore>
-#include <QtGui>
+//#include <QtGui>
+#include <QApplication>
 #include <QDesktopWidget>
+#include <QSound>
+
 #include "frmmessagebox.h"
 
 class myHelper:public QObject
@@ -41,7 +45,9 @@ public:
         QFile file(QString("%1").arg(styleName));
         file.open(QFile::ReadOnly);
         QString css = QLatin1String(file.readAll());
-        qApp->setStyleSheet(css);
+
+        QApplication::setStyle(css);
+        // qApp->setStyleSheet(css);
     }
 
     //¼ÓÔØÖÐÎÄ×Ö·û
@@ -126,7 +132,7 @@ public:
         char lstr,hstr;
         for(int i=0; i<len; )
         {
-            hstr=str[i].toAscii();
+            hstr = str[i].toLatin1();
             if(hstr == ' ')
             {
                 i++;
@@ -135,7 +141,7 @@ public:
             i++;
             if(i >= len)
                 break;
-            lstr = str[i].toAscii();
+            lstr = str[i].toLatin1();
             hexdata = ConvertHexChar(hstr);
             lowhexdata = ConvertHexChar(lstr);
             if((hexdata == 16) || (lowhexdata == 16))
@@ -263,13 +269,13 @@ public:
     static uchar GetUChar(char data)
     {
         uchar temp;
-        if (data>127)
+        if (data > 126)
         {
-            temp=data+256;
+            temp = data + 256;
         }
         else
         {
-            temp=data;
+            temp = data;
         }
         return temp;
     }

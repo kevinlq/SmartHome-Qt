@@ -7,6 +7,7 @@
 QT  += core gui
 QT  += printsupport
 QT  += sql
+QT  += multimedia
 #QT  += phonon
 
 CONFIG  += serialport

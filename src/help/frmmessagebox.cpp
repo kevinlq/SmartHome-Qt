@@ -4,6 +4,9 @@
 #include "myhelper.h"
 #include "myapp.h"
 
+/*Qt lib*/
+#include <QMouseEvent>
+
 frmMessageBox::frmMessageBox(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::frmMessageBox)

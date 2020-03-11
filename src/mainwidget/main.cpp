@@ -26,7 +26,7 @@ Description:智能家居---主程序，加载配置信息、程序样式，设�
 #endif
 
 #if (QT_VERSION > QT_VERSION_CHECK(5,0,0))
-#include <QtWidgets>
+//#include <QtWidgets>
 #endif
 
 int main(int argc, char *argv[])
@@ -37,7 +37,6 @@ int main(int argc, char *argv[])
 #if __ARM__
     QWSServer::setCursorVisible(false);
 #endif
-
 
     Myapp::ReadConfig();                                  //读配置文件
     myHelper::setUTF8Code();                              //设置编码方式

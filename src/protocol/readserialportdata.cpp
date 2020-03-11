@@ -394,15 +394,16 @@ void ReadSerialPortData::execCmd(QByteArray buff)
 
     if (m_dataLen > 0)
     {
-        quint8 tens;
-        quint8 unit;
+        quint8 tens = 0;
+        quint8 unit = 0;
         //这里只处理了2个字节，不全面，不过对实际收到的数据分析，
         //发现真正的数据只有2个字节
         if (strHex.mid(10,2) != "00")
         {
             tens = strHex.mid(10,2).toUInt(&ok,16)-
                     DATA_TO_ASCII;
-        }if (strHex.mid(12,2) != "00")
+        }
+        if (strHex.mid(12,2) != "00")
         {
             unit = strHex.mid(12,2).toUInt(&ok,16)-
                     DATA_TO_ASCII;

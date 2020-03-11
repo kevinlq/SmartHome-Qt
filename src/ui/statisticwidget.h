@@ -11,9 +11,11 @@ Description:智能家居--统计模块的实现
 #define STATISTICWIDGET_H
 
 #include <QWidget>
-#include "qcustomplot.h"
+
+//#include "qcustomplot.h"
 
 class SqlHelp;
+class QCustomPlot;
 
 namespace Ui {
 class StatisticWidget;

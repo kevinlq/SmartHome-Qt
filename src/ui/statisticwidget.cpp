@@ -11,6 +11,9 @@ Description:智能家居--统计模块的实现
 #include "ui_statisticwidget.h"
 #include  "control.h"
 #include "sqlhelp.h"
+
+#include "qcustomplot.h"
+
 #include <QDateTime>
 #include <QTime>
 #include <QDate>
