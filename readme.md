@@ -77,9 +77,15 @@ DESTDIR = $$PWD/bin
  
 ## 5 感谢
 
+欢迎关注微信公众号，互相交流
+![devstone](https://gitee.com/devstone/imageBed/raw/master/code/qrcode_for_devstone.png)
+
+
 如果觉得分享的内容不错，可以请作者喝杯咖啡
 
 ![thanks](/screen/myCode.png)
+
+
 
  
 ## 6. Change Logs
