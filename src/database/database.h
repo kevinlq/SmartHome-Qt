@@ -70,23 +70,23 @@ static bool createConnection()
                            "MemberRegister vchar(20),MemberBirthday vchar(20),"
                            "MemberEmail vchar(20),CurrentTime vchar(30),"
                            "MemberRemark vchar(500))"));
-    query.exec(QObject::tr("insert into Member values (80000000,'张楠','15383463513',"
-                           "'山西省太原市尖草坪区太原工业学院','普通级','300','350',"
+    query.exec(QObject::tr("insert into Member values (80000000,'xx1','15383463513',"
+                           "'xxx工业学院','普通级','300','350',"
                            "'2014-08-20','1992-01-01','Zhang@163.com','','')"));
-    query.exec(QObject::tr("insert into Member values (80000001,'李棋','15383465641',"
-                           "'山西省太原市尖草坪区太原工业学院','尊贵级','3000','10000',"
+    query.exec(QObject::tr("insert into Member values (80000001,'xx2','15383465641',"
+                           "'xxx工业学院','尊贵级','3000','10000',"
                            "'2014-06-20','1992-11-24','creazylq@163.com','','')"));
-    query.exec(QObject::tr("insert into Member values (80000002,'张泽军','15388511234',"
-                           "'山西省太原市尖草坪区太原工业学院','普通级','440','500',"
+    query.exec(QObject::tr("insert into Member values (80000002,'xx3','15388511234',"
+                           "'xxx工业学院','普通级','440','500',"
                            "'2013-06-20','1991-1-4','zhangzj@163.com','','')"));
-    query.exec(QObject::tr("insert into Member values (80000003,'梅翔','15388513945',"
-                           "'山西省太原市尖草坪区太原工业学院','尊贵级','1000','1200',"
+    query.exec(QObject::tr("insert into Member values (80000003,'xx4','15388513945',"
+                           "'xxx工业学院','尊贵级','1000','1200',"
                            "'2011-04-12','1992-4-12','meixiang@163.com','','')"));
-    query.exec(QObject::tr("insert into Member values (80000004,'马恩东','15388513920',"
-                           "'山西省太原市尖草坪区太原工业学院','普通级','500','700',"
+    query.exec(QObject::tr("insert into Member values (80000004,'xx5','15388513920',"
+                           "'xxx工业学院','普通级','500','700',"
                            "'2001-06-20','1991-3-2','maendong@163.com','','')"));
-    query.exec(QObject::tr("insert into Member values (80000005,'谷忠新','15388510110',"
-                           "'山西省太原市尖草坪区太原工业学院','普通级','500','700',"
+    query.exec(QObject::tr("insert into Member values (80000005,'xx6','15388510110',"
+                           "'xxx工业学院','普通级','500','700',"
                            "'2014-09-10','1991-8-2','guzhongxin@163.com','','')"));
 
     /**********************商 品 信 息 表********************************
