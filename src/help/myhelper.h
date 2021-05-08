@@ -40,14 +40,20 @@ public:
     }
 
     //设置皮肤样式
-    static void setStyle(const QString &styleName)
+    static bool setStyle(const QString &styleName)
     {
         QFile file(QString("%1").arg(styleName));
-        file.open(QFile::ReadOnly);
-        QString css = QLatin1String(file.readAll());
+        if ( !file.open(QFile::ReadOnly))
+        {
+            return false;
+        }
 
-        QApplication::setStyle(css);
-        // qApp->setStyleSheet(css);
+        QString css = QLatin1String(file.readAll());
+        file.close();
+
+        qApp->setStyleSheet(css);
+
+        return true;
     }
 
     //加载中文字符

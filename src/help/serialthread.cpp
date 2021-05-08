@@ -32,16 +32,12 @@ SerialThread::SerialThread(QObject *parent):
         m_myCom->flush();//Çå¿Õ»º³åÇø
         m_isStopped = true;
 
-#if QDEBUG
         qDebug()<<"open serial ok!";
-#endif
 
     }else
     {
         m_isStopped = false;
-#if QDEBUG
         qDebug()<<"open serial failed!";
-#endif
     }
 }
 

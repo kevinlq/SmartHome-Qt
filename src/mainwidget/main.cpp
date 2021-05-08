@@ -58,27 +58,19 @@ int main(int argc, char *argv[])
 
     if (!myHelper::FileIsExist("SmartHome.db"))
     {
-#if QDEBUG
         qDebug()<<"database file is not find!System Now Will Close!";
         qDebug()<<Myapp::AppPath;
-#endif
         return 1;
     }else
     {
-#if QDEBUG
         qDebug()<<"database file is find OK!";
-#endif
     }
     if (!createConnection())
     {
-#if QDEBUG
         qDebug()<<"open database failed!";
-#endif
     }else
     {
-#if QDEBUG
         qDebug()<<"open database succeed!";
-#endif
     }
 
     Widget w;

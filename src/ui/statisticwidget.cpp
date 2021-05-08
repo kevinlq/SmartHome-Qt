@@ -148,11 +148,9 @@ void StatisticWidget::loadPlotTempture()
         //将时间转换为秒，这样才能显示在坐标轴上
         m_plot_tempture_keys << (QDateTime::fromString(str,"yyyyMMddhhmmss").toMSecsSinceEpoch()/1000);
     }
-#if QDEBUG
     //qDebug()<<"temp_value_count:"<<m_plot_tempture_values.count();
     qDebug()<<"temp_value:"<<m_plot_tempture_values;
     qDebug()<<"temp_data:"<<m_plot_tempture_keys;
-#endif
 
     m_plots_list.at(0)->graph(0)->addData(m_plot_tempture_keys,
                                           m_plot_tempture_values);
@@ -317,11 +315,9 @@ void StatisticWidget::loadPlotHumidity()
             //将时间转换为秒，这样才能显示在坐标轴上
             m_plot_hum_keys << (QDateTime::fromString(str,"yyyyMMddhhmmss").toMSecsSinceEpoch()/1000);
         }
-#if QDEBUG
         //qDebug()<<"temp_value_count:"<<m_plot_tempture_values.count();
         qDebug()<<"temp_value:"<<m_plot_hum_values;
         qDebug()<<"temp_data:"<<m_plot_hum_keys;
-#endif
     }
     m_plots_list.at(1)->graph(0)->addData(m_plot_hum_keys,
                                           m_plot_hum_values);
@@ -394,19 +390,16 @@ void StatisticWidget::loadPlotSmoke()
     QString sql_key = "SELECT device_data FROM device_info WHERE";
     sql_key += " device_id = '03' AND device_data >= "+ cur_time.left(8).append("000000");
     sql_key += " AND device_data <=" + cur_time;
-#if QDEBUG
     qDebug()<<"seach data from database:";
     qDebug()<< sql_value;
-#endif
     value = m_sqlhelp->getColumnData(sql_value);
     key = m_sqlhelp->getColumnData(sql_key);
-#if QDEBUG
+
     qDebug("\n\n");
     qDebug()<<"size:"<<value.count();
     qDebug() <<"value:"<<value;
     qDebug() <<"key:"<<key;
     qDebug("\n\n");
-#endif
 
     m_smoke_count = value.count();
     m_plot_smoke_values.clear();
@@ -488,11 +481,9 @@ void StatisticWidget::loadPlotSmoke()
         //将时间转换为秒，这样才能显示在坐标轴上
         m_plot_smoke_keys << (QDateTime::fromString(str,"yyyyMMddhhmmss").toMSecsSinceEpoch()/1000);
     }
-#if QDEBUG
     //qDebug()<<"temp_value_count:"<<m_plot_tempture_values.count();
     qDebug()<<"temp_value:"<<m_plot_smoke_values;
     qDebug()<<"temp_data:"<<m_plot_smoke_keys;
-#endif
 
     m_plots_list.at(2)->graph(0)->addData(m_plot_smoke_keys,
                                           m_plot_smoke_values);
@@ -798,12 +789,9 @@ void StatisticWidget::on_ckText_stateChanged(int arg1)
 
 void StatisticWidget::slotUpdataData()
 {
-
-#if QDEBUG
     qDebug()<<"=================================";
     qDebug()<<"start update statistic data";
     qDebug()<<"=================================";
-#endif
 
     //    QString new_smoke_value = m_sqlhelp->getLastRecord("device_info","device_value",
     //                                                       "device_id",DEVICE_SMOKE);

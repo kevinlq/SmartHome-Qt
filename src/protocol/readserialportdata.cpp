@@ -67,19 +67,15 @@ void ReadSerialPortData::openSerialPort()
     if (gIsOpenPort)
     {
 
-#if QDEBUG
         qDebug()<<"\n\n==================";
         qDebug()<<"open serial port ok!";
         qDebug()<<"\n\n==================";
-#endif
 
     }else
     {
-#if QDEBUG
         qDebug()<<"\n\n==================";
         qDebug()<<"open serial port failed!"<<m_myCom->errorString();
         qDebug()<<"\n\n==================";
-#endif
     }
 }
 
@@ -120,14 +116,14 @@ void ReadSerialPortData::sendData()
     str.append(getDataLen());
     str.append(getData());
     str.append(m_sendEnd);
-#if QDEBUG
     QString outData;
+
     outData = myHelper::ByteArrayToHexStr(str);
     qDebug()<<"==============================";
     qDebug()<<"send data begin:";
     qDebug()<<outData<<"size:"<<outData.size();
     qDebug()<<"==============================";
-#endif
+
     m_myCom->write(str);
     myHelper::Sleep(50);
     m_myCom->write(str);
@@ -144,16 +140,12 @@ void ReadSerialPortData::slotReadData()
         //不是帧头则返回
         if (m_temp.at(0) != BGN_RESD_MSG)
         {
-#if QDEBUG
             qDebug()<<"the data is not the data of head!";
-#endif
             return;
         }
         else
         {
-#if QDEBUG
             qDebug()<<"the data of head is ok!";
-#endif
             readData = m_temp;
             execCmd(readData);
         }
@@ -174,9 +166,7 @@ void ReadSerialPortData::slotInitSerialPort()
 {
     //init();
     initConnect();
-#if QDEBUG
     qDebug()<<"thread is run!";
-#endif
 }
 
 void ReadSerialPortData::slotSendMessage()
@@ -265,11 +255,9 @@ void ReadSerialPortData::slotReceiveChildrenValue(quint8 value)
 void ReadSerialPortData::slotReceiveParlourValue(quint8 model, const QString &value)
 {
     quint8 data_len = value.length();
-#if QDEBUG
     qDebug()<<"model:"<<model;
     qDebug()<<"value:"<<value;
     qDebug()<<"data_len:"<<data_len<<endl;
-#endif
     switch (model)
     {
     case MODULE_DS18B20:
@@ -412,7 +400,6 @@ void ReadSerialPortData::execCmd(QByteArray buff)
     }
 
     m_sendEnd = strHex.right(2).toUInt(&ok,16);
-#if QDEBUG
     //    qDebug()<<"m_sendBegin:"<<m_sendBegin;
     //    qDebug()<<"m_potocolLen:"<<m_potocolLen;
     //    qDebug()<<"m_device:"<<m_device;
@@ -423,7 +410,6 @@ void ReadSerialPortData::execCmd(QByteArray buff)
 
     //输出一帧完整的数据
     qDebug()<<strHex.toUpper();
-#endif
 
     strHex = "";        //清空
     execData();         //解析数据
@@ -502,9 +488,7 @@ void ReadSerialPortData::execDs18b20Data(QByteArray buff)
     //cur_parlour_tempture = tempture;
 
     emit signalParlourTempture(tempture);
-#if QDEBUG
     qDebug()<<"DS18B20:"<<tempture;
-#endif
 }
 
 //解析客厅湿度值
@@ -521,9 +505,7 @@ void ReadSerialPortData::execDHT11_HumData(QByteArray buff)
     //cur_parlour_humidity = humidity;
 
     emit signalParlourHumidity(humidity);
-#if QDEBUG
     qDebug()<<"DHT11_HUM:"<<humidity;
-#endif
 }
 
 //解析卧室温度值
@@ -537,9 +519,7 @@ void ReadSerialPortData::execDHT11_TemData(QByteArray buff)
     }
 
     emit signalBedRoomTempture(tempture);
-#if QDEBUG
     qDebug()<<"DHT11_Tem:"<<tempture;
-#endif
 }
 
 //解析烟雾浓度值
@@ -556,9 +536,7 @@ void ReadSerialPortData::execSMOKEData(QByteArray buff)
     //cur_smoke_density = smoke;
 
     emit signalKitchenSmoke(smoke);
-#if QDEBUG
     qDebug()<<"SMOKE:"<<smoke;
-#endif
 }
 
 //卧室灯控制命令发送函数
