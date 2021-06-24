@@ -32,11 +32,9 @@ SaveDataThread::~SaveDataThread()
 
 void SaveDataThread::run()
 {
-#if QDEBUG
     qDebug()<<"=======================\n";
     qDebug()<<"start save sensor data!";
     qDebug()<<"=======================\n";
-#endif
     while (m_isStop)
     {
         msleep(1000);
@@ -45,10 +43,8 @@ void SaveDataThread::run()
         if ( SAVE_DATA_INTERVAL ==  m_count)
         {
             //保存数据，请求数据，并将数据插入数据库中
-#if QDEBUG
             qDebug()<<"\n\n================================";
             qDebug() << SAVE_DATA_INTERVAL<<" come!";
-#endif
 #if 0
             //插入烟雾值
             this->insertData(DEVICE_SMOKE,cur_smoke_density);
@@ -107,9 +103,7 @@ void SaveDataThread::insertData()
     sql += "device_value,device_data,remark) VALUES('";
     sql += deviceName +"','" + value+"','" + currentDataTime + "','" + "')";
 
-#if QDEBUG
     qDebug()<<"insert data:"<<sql;
-#endif
     m_sqlHelp->ExecuteSql(sql);
 #endif
 
@@ -136,18 +130,14 @@ void SaveDataThread::insertData()
     try {
         if (!query.execBatch())
         {
-#if QDEBUG
             qDebug()<<query.lastQuery();
             qDebug()<<query.lastError();
             return;
-#endif
         }else
         {
-#if     QDEBUG
             qDebug()<<"\n=================\n";
             qDebug()<<"save data ok!\n";
             qDebug()<<"\n=================\n";
-#endif
         }
 
     } catch (...) {

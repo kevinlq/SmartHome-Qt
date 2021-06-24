@@ -41,6 +41,12 @@
 
 # 基于zigbee和STM32的环境监测监控系统
 
+
+项目设计、开发文档、以及开发资料获取方式：
+
+**获取更多信息可以关注微信公众号：devstone**
+
+
 ## 1 系统功能
 详细的介绍可以看博客[http://blog.csdn.net/u013704336/article/details/51765397][1]
 这个项目作为2016年的毕设，完美完成了各项要求。综合利用了所学的C语言、C++、zigbee、stm32、Qt、ARM、等嵌入式技术。
@@ -108,7 +114,6 @@ DESTDIR = $$PWD/bin
 欢迎关注微信公众号，互相交流
 
 ![devstone](https://gitee.com/devstone/imageBed/raw/master/code/qrcode_for_devstone.png )
-
 
 如果觉得分享的内容不错，可以请作者喝杯咖啡
 

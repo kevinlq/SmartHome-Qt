@@ -254,9 +254,7 @@ void Parlourwidget::slotUpdataHum(QString hum)
 {
     ui->label_cur_hum->setText(hum+"%");
     cur_parlour_humidity = hum;
-#if QDEBUG
     qDebug()<<"Cur Parlout humidity:"<<hum;
-#endif
 }
 
 //¸üÐÂLED×´Ì¬
@@ -268,16 +266,12 @@ void Parlourwidget::slotUpdataLedStatus(quint8 device, quint8 cmd)
         {
             ui->label_light_main->setStyleSheet(m_styleOn);
             ui->pbn_light_main->SetCheck(true);
-#if QDEBUG
             qDebug()<<"parlour led_main set on";
-#endif
         }else
         {
             ui->label_light_main->setStyleSheet(m_styleOff);
             ui->pbn_light_main->SetCheck(false);
-#if QDEBUG
             qDebug()<<"parlour led_main set off";
-#endif
         }
     }else if (MODULE_PARLOUR_LED_TOP == device)
     {
@@ -285,16 +279,12 @@ void Parlourwidget::slotUpdataLedStatus(quint8 device, quint8 cmd)
         {
             ui->label_light_top->setStyleSheet(m_styleOn);
             ui->pbn_light_top->SetCheck(true);
-#if QDEBUG
             qDebug()<<"parlour led_top set on";
-#endif
         }else
         {
             ui->label_light_top->setStyleSheet(m_styleOff);
             ui->pbn_light_top->SetCheck(false);
-#if QDEBUG
             qDebug()<<"parlour led_top set off";
-#endif
         }
     }else if (MODULE_PARLOUR_LED_HELP == device)
     {
@@ -302,16 +292,12 @@ void Parlourwidget::slotUpdataLedStatus(quint8 device, quint8 cmd)
         {
             ui->label_light_help->setStyleSheet(m_styleOn);
             ui->pbn_light_help->SetCheck(true);
-#if QDEBUG
             qDebug()<<"parlour led_help set on";
-#endif
         }else
         {
             ui->label_light_help->setStyleSheet(m_styleOff);
             ui->pbn_light_help->SetCheck(false);
-#if QDEBUG
             qDebug()<<"parlour led_help set off";
-#endif
         }
     }
 }
@@ -353,10 +339,8 @@ void Parlourwidget::on_tbn_temp_add_clicked()
         new_temp = QString::number(temp.toInt() + 1);
     }
     ui->label_set_temp->setText(new_temp);
-#if QDEBUG
     qDebug()<<"current tempture:"<<temp;
     qDebug()<<"add tempture:"<<new_temp<<endl;
-#endif
     //send temptuer
     emit signalSendTemptureValue(MODULE_DS18B20,new_temp);
 }
@@ -372,10 +356,8 @@ void Parlourwidget::on_tbn_temp_sub_clicked()
         new_temp = QString::number(temp.toInt() - 1);
     }
     ui->label_set_temp->setText(new_temp);
-#if QDEBUG
     qDebug()<<"current tempture:"<<temp;
     qDebug()<<"sub tempture:"<<new_temp<<endl;
-#endif
     //send temptuer
     emit signalSendTemptureValue(MODULE_DS18B20,new_temp);
 }
@@ -391,10 +373,8 @@ void Parlourwidget::on_tbn_hum_add_clicked()
         new_humi = QString::number(humi.toInt() + 1);
     }
     ui->label_set_hum->setText(new_humi);
-#if QDEBUG
     qDebug()<<"current humidity:"<<humi;
     qDebug()<<"sub humidity:"<<new_humi<<endl;
-#endif
     //send humidity
     emit signalSendHumidityVlaue(MODULE_DHT11_HUM,new_humi);
 }
@@ -410,10 +390,8 @@ void Parlourwidget::on_tbn_hum_sub_clicked()
         new_humi = QString::number(humi.toInt() - 1);
     }
     ui->label_set_hum->setText(new_humi);
-#if QDEBUG
     qDebug()<<"current humidity:"<<humi;
     qDebug()<<"sub humidity:"<<new_humi<<endl;
-#endif
     //send humidity
     emit signalSendHumidityVlaue(MODULE_DHT11_HUM,new_humi);
 }

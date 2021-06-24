@@ -381,9 +381,7 @@ void Widget::slotShowCurrentDataTime()
 
 void Widget::slotErrorString(QString err)
 {
-#if QDEBUG
     qDebug()<<"error:"<<err;
-#endif
 }
 
 void Widget::keyPressEvent(QKeyEvent *key)

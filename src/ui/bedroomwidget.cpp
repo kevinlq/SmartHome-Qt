@@ -155,9 +155,7 @@ void BedRoomWidget::slotLightRight()
 void BedRoomWidget::slotUpdataTemp(QString temp)
 {
     ui->label_cur_temp->setText(temp);
-#if QDEBUG
     qDebug()<<"Cur parlour tempture:"<<temp;
-#endif
 }
 
 //¸üÐÂLEDµÆµÄ×´Ì¬
@@ -168,30 +166,22 @@ void BedRoomWidget::slotUpdataLedStatus(quint8 device, quint8 cmd)
         if (CMD_BED_ROOM_LED_LEFT_ON == cmd){
             ui->pbn_light_left->SetCheck(true);
             ui->label_light_top->setStyleSheet(m_styleOn);
-#if QDEBUG
              qDebug()<<"bed_room led_left set on";
-#endif
         }else{
             ui->pbn_light_left->SetCheck(false);
             ui->label_light_top->setStyleSheet(m_styleOff);
-#if QDEBUG
             qDebug()<<"bed_room led_left set off";
-#endif
         }
     }else if ( MODULE_BED_ROOM_LED_RIGHT == device)
     {
         if (CMD_BED_ROOM_LED_RIGHT_ON == cmd){
             ui->pbn_light_right->SetCheck(true);
             ui->label_light_help->setStyleSheet(m_styleOn);
-#if QDEBUG
             qDebug()<<"bed_room led_right set on";
-#endif
         }else{
             ui->pbn_light_right->SetCheck(false);
             ui->label_light_help->setStyleSheet(m_styleOff);
-#if QDEBUG
             qDebug()<<"bed_room led_right set off";
-#endif
         }
     }
 }

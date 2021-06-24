@@ -54,19 +54,13 @@ void CurtainWidget::slotUpdataCurtainStatus(quint8 cmd)
 {
     if (CMD_CURTAIN_ON == cmd)
     {
-#if QDEBUG
         qDebug()<<"curtain set on";
-#endif
     }else if (CMD_CURTAIN_OFF == cmd)
     {
-#if QDEBUG
         qDebug()<<"curtain set off";
-#endif
     }else
     {
-#if QDEBUG
         qDebug()<<"curtain set stop";
-#endif
     }
 }
 

@@ -135,9 +135,7 @@ void KitchenWidget::slotUpdataSmokeValue(QString smoke)
     int temp = 100 - smoke.toInt();
     ui->label_cur_smoke->setText(QString::number(temp)+"%");
     cur_smoke_density = QString::number(temp,10);
-#if QDEBUG
     qDebug() <<"kitchen smoke:"<<smoke;
-#endif
 }
 
 void KitchenWidget::slotUpdataLedStatus(quint8 device, quint8 cmd)
@@ -148,16 +146,12 @@ void KitchenWidget::slotUpdataLedStatus(quint8 device, quint8 cmd)
         {
             ui->label_light_main->setStyleSheet(m_styleOn);
             ui->pbn_light_main->SetCheck(true);
-#if QDEBUG
             qDebug()<<"kitchen led set on";
-#endif
         }else
         {
             ui->label_light_main->setStyleSheet(m_styleOn);
             ui->pbn_light_main->SetCheck(true);
-#if QDEBUG
             qDebug()<<"kitchen led set off";
-#endif
         }
     }
 }
