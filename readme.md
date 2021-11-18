@@ -46,6 +46,11 @@
 
 **获取更多信息可以关注微信公众号：devstone**
 
+<div align=center>
+<img src="https://gitee.com/devstone/imageBed/raw/master/code/qrcode_for_devstone.png" width=20% height=20%/>
+
+<div align=left>
+
 
 ## 1 系统功能
 详细的介绍可以看博客[http://blog.csdn.net/u013704336/article/details/51765397][1]
@@ -113,7 +118,8 @@ DESTDIR = $$PWD/bin
 
 欢迎关注微信公众号，互相交流
 
-![devstone](https://gitee.com/devstone/imageBed/raw/master/code/qrcode_for_devstone.png )
+
+<img src="https://gitee.com/devstone/imageBed/raw/master/code/qrcode_for_devstone.png" width=40% height=40%/>
 
 如果觉得分享的内容不错，可以请作者喝杯咖啡
 
