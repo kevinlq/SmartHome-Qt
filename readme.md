@@ -57,6 +57,8 @@
 
 ![framework](./screen/framework.png)
 
+有关该项目详细使用说明，可以看这边博客，介绍的比较详细.[传送门][3]
+
 ## 开发环境
 
 ```
@@ -167,7 +169,7 @@ DESTDIR = $$PWD/bin
 
  [1]: http://blog.csdn.net/u013704336/article/details/51765397
  [2]: http://kevinlq.com/2015/09/11/Qt_corss_build_setting/		"kevinlq 鹅卵石的博客"
- 
+ [3]: https://blog.csdn.net/u013704336/article/details/115498719?spm=1001.2014.3001.5502
  
  
  
