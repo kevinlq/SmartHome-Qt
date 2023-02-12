@@ -162,9 +162,9 @@ DESTDIR = $$PWD/bin
  - v2.0 tag 适配Qt5版本，可以正常运行，稳定性未验证(windows 10)
  
  ---
- 
- >补充下，时间真快，到目前(2018年4月25日20:20:38)为止，2年了，曾经分享的这套代码喜欢的人还是很多的，
- 还是很高兴。以后会继续分享的(之前这份代码确实写的比较烂)。
+
+## 安全认证
+[![Security Status](https://www.murphysec.com/platform3/v3/badge/1614013746192613376.svg?t=1)](https://www.murphysec.com/accept?code=69f7806ceb54b7d3e1a8a09bff768c88&type=1&from=2&t=2)
 
 
  [1]: http://blog.csdn.net/u013704336/article/details/51765397
