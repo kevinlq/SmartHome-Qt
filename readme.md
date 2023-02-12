@@ -51,6 +51,11 @@
 
 <div align=left>
 
+## 安全认证
+[![Security Status](https://www.murphysec.com/platform3/v3/badge/1614013746192613376.svg?t=1)](https://www.murphysec.com/accept?code=69f7806ceb54b7d3e1a8a09bff768c88&type=1&from=2&t=2)
+
+
+
 ## 项目介绍
 
 本系统分为硬件和软件两部分内容，下位机 `STM32` 单片机驱动各个传感器模块采集数据，然后发送给 `ZigBee`  终端，`ZigBee` 终端在接收到数据后发送给协调器，协调器是和 `ARM`开发板(上位机)相连接的，`ARM` 开发板收到数据后进行相应的解析并显示在界面上。其中ARM开发板上跑的是使用 `Qt` 编写的程序，经过交叉编译后移植到了开发板上。
@@ -142,12 +147,7 @@ DESTDIR = $$PWD/bin
 
 欢迎关注微信公众号，互相交流
 
-
-<img src="https://gitee.com/devstone/imageBed/raw/master/code/qrcode_for_devstone.png" width=40% height=40%/>
-
-如果觉得分享的内容不错，可以请作者喝杯咖啡
-
-![thanks](/screen/myCode.png)
+<img src="https://gitee.com/devstone/imageBed/raw/master/code/qrcode_for_devstone.png" width=30% height=30%/>
 
  
 ## Change Logs
@@ -162,9 +162,6 @@ DESTDIR = $$PWD/bin
  - v2.0 tag 适配Qt5版本，可以正常运行，稳定性未验证(windows 10)
  
  ---
-
-## 安全认证
-[![Security Status](https://www.murphysec.com/platform3/v3/badge/1614013746192613376.svg?t=1)](https://www.murphysec.com/accept?code=69f7806ceb54b7d3e1a8a09bff768c88&type=1&from=2&t=2)
 
 
  [1]: http://blog.csdn.net/u013704336/article/details/51765397
