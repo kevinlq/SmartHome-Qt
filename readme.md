@@ -42,7 +42,7 @@
 # 基于 Zigbee 和 STM32 的环境监测监控系统
 
 
-项目设计、开发文档、以及开发资料获取方式：
+项目设计、开发文档、论文、以及开发资料获取方式：
 
 **获取更多信息可以关注微信公众号：devstone**
 
@@ -50,10 +50,6 @@
 <img src="https://gitee.com/devstone/imageBed/raw/master/code/qrcode_for_devstone.png" width=20% height=20%/>
 
 <div align=left>
-
-## 安全认证
-[![Security Status](https://www.murphysec.com/platform3/v3/badge/1614013746192613376.svg?t=1)](https://www.murphysec.com/accept?code=69f7806ceb54b7d3e1a8a09bff768c88&type=1&from=2&t=2)
-
 
 
 ## 项目介绍
